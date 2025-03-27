@@ -15,8 +15,8 @@ sum(case when `transaction type`='debit' then amount else 0 end) Total_Debit fro
 
 # 4 Net Transaction Amount
 select round(total_credit-total_debit,2) Net_Transaction from (
-select sum(case when `transaction type`='credit' then amount else 0 end) Total_Credit, sum(case when `transaction type`='debit' then amount else 0 end) Total_Debit
-from credit)abc;
+select sum(case when `transaction type`='credit' then amount else 0 end) Total_Credit,
+	sum(case when `transaction type`='debit' then amount else 0 end) Total_Debit from credit)abc;
 
 # 5 Account Activity Ratio
 select Transactions, Balance, round(transactions/balance,5) Activity_Ratio from(
