@@ -15,22 +15,22 @@
 - [Results/Findings](#resultsfindings)
 - [Recommendations](#recommendations)
 - [Limitations](#limitations)
-  
+---
 ## Project Overview
 
 Conducted an in-depth data analysis of banking data to uncover meaningful insights into customer behavior, debit-credit transaction patterns, and the bank’s financial performance, helping identify trends and opportunities for improvement.
-
+##
 ### Data Sources
 [DataSet1](https://github.com/Lomoanj/Banking-Data-Analysis/blob/Banking/Bank%20Data%20Analystics.xlsx) | 
 [DataSet2](https://github.com/Lomoanj/Banking-Data-Analysis/blob/Banking/Debit%20and%20Credit%20banking_data.xlsx)
-
+##
 ### Tools Used
 
 - Excel - Data cleaning, transformation, analysis, and visualization. [Excel Download Link](https://support.microsoft.com/excel)
 - SQL - Data querying and management for large datasets. [MySQL Workbench Download Link](https://dev.mysql.com/downloads/workbench/)
 - PowerBI - Visualization, reporting, and trend analysis for easy  decision-making. [PowerBI Desktop Download Link](https://www.microsoft.com/en-us/power-platform/products/power-bi/downloads)
 - Tableau - Visualization, reporting, and trend analysis for easy  decision-making. [Tableau Public Download Link](https://www.tableau.com/products/desktop/download)
-
+##
 ### Data Cleaning/Preparation
 
 1. Removed duplicates and irrelevant columns  
@@ -38,7 +38,7 @@ Conducted an in-depth data analysis of banking data to uncover meaningful insigh
 3. Standardized date and currency formats  
 4. Normalized categorical values for consistency  
 5. Created calculated columns for analysis
-
+##
 ### Exploratory Data Analysis (EDA)
 
 - Explored customer, loan, and transaction data to understand overall structure   
@@ -46,7 +46,7 @@ Conducted an in-depth data analysis of banking data to uncover meaningful insigh
 - Identified trends such as seasonal spending and loan approval patterns  
 - Detected outliers and anomalies for data quality and insights  
 - Visualized relationships to uncover correlations
-
+##
 ### Key Performance Indicators (KPIs)
 
 Identified and tracked crucial metrics to evaluate the bank’s performance and customer behavior.  
@@ -86,28 +86,28 @@ KPIs included in Credit-Debit dashboards:
 10. Branch Transaction Growth: Percentage change in total transaction amount over time.
 11. High-Risk Transaction Flag: Flags transactions which exceeds predefined amount.
 12. Suspicious Transaction Frequency: Number of High-Risk transaction over period.
-
+##
 ## Excel Dashboards
 [Excel Banking Analytics](https://github.com/Lomoanj/Banking-Data-Analysis/blob/Banking/Excel%20Bank%20Analytics.xlsx)  
 ![image](https://github.com/user-attachments/assets/194d4b6c-0ae1-4d1a-a3d6-f12e60551d4e)
 
 [Excel Credit-Debit Dashboard](https://github.com/Lomoanj/Banking-Data-Analysis/blob/Banking/Excel%20Credit%20Debit)
 ![image](https://github.com/user-attachments/assets/77246dd4-4cb5-4950-9b91-72e62d6a9229)
-
+##
 ## Tableau Dashboards
 [Tablaeu Banking Analytics](https://github.com/Lomoanj/Banking-Data-Analysis/blob/Banking/Tableau%20Bank%20Analytics.twbx)
 ![image](https://github.com/user-attachments/assets/da57a63e-8179-44ae-8514-eb9dc7697aca)
 
 [Tableau Credit-Debit Dashboard](https://github.com/Lomoanj/Banking-Data-Analysis/blob/Banking/Tableau%20Debit%20Credit.twbx)
 ![image](https://github.com/user-attachments/assets/220948bb-771a-423a-b137-e80aa3ca1a2f)
-
+##
 ## PowerBI Dashboards
 [PowerBI Banking Analytics](https://github.com/Lomoanj/Banking-Data-Analysis/blob/Banking/PowerBI%20Bank%20Analytics.pbix)
 ![image](https://github.com/user-attachments/assets/785c86ce-5ff8-4112-bb06-7acaaa1eb8eb)
 
 [PowerBI Credit-Debit Dashboard](https://github.com/Lomoanj/Banking-Data-Analysis/blob/Banking/PowerBI%20Debit%20Credit.pbix)
 ![image](https://github.com/user-attachments/assets/c209f7bf-79f1-4a67-aa43-52ca6751d87f)
-
+##
 ## SQL Queries
 [SQL Banking Analytics Queries](https://github.com/Lomoanj/Banking-Data-Analysis/blob/Banking/Bank_Analytics.sql) | [Dataset1.sql](https://github.com/Lomoanj/Banking-Data-Analysis/blob/Banking/Banking_Analytics.sql)  
 [SQL Credit-Debit Queries](https://github.com/Lomoanj/Banking-Data-Analysis/blob/Banking/Credit_Debit.sql) | [Dataset2.sql](https://github.com/Lomoanj/Banking-Data-Analysis/blob/Banking/Debit_Credit.sql)  
@@ -126,7 +126,7 @@ select distinct `transaction date`, count(*) over(partition by `transaction date
 count(*) over(partition by week(`transaction date`)) per_Week,
 count(*) over(partition by month(`transaction date`)) per_Month from credit order by 1;
 ```
-
+##
 ## Results/Findings
 
 - Home loans accounted for the highest total loan amount  
@@ -137,7 +137,7 @@ count(*) over(partition by month(`transaction date`)) per_Month from credit orde
 - 65% of loans were marked as "Not Verified"  
 - Individuals aged 26–45 held the highest share of total loan amounts  
 - The year 2018 recorded the highest overall loan disbursement
-
+##
 ## Recommendations
 
 - Strengthen verification process to reduce unverified loans  
@@ -146,8 +146,9 @@ count(*) over(partition by month(`transaction date`)) per_Month from credit orde
 - Promote financial literacy in high-default regions  
 - Digitize documentation and approval workflow for efficiency  
 - Target high-performing states for new financial products  
-
+##
 ## Limitations
 
 The analysis faced several limitations, including incomplete or outdated data and limited customer demographics, which restricted deeper behavioral insights. A significant portion of loans (65%) lacked verification, affecting the reliability of findings. Additionally, the impact of external economic factors was not considered, and regional data imbalance may have influenced the overall trends and conclusions.
  
+###
